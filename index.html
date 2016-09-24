@@ -1,10 +1,247 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<title>Interestelar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />	
+	<meta name="description" content="Interestelar" />
+	
+	<!-- Included CSS files -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic,Dosis:500" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
-    </head>
-    <body style="text-align: center;">
-        <div style="margin: auto;">
-            <img src="https://interestelar.github.io/img/interestelar_rocket.png">
-        </div>
-    </body>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/logo/icon.png" />
+	
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" media="all" href="css/ie.css" />
+	<![endif]-->
+</head>
+<body>
+
+	<!-- LEFT SIDE -->
+	<div class="left-wrap">
+
+		<div class="inner fadeInLeft">
+			
+			<!-- Header -->
+			<header class="site-header">
+				<h1 class="site-title"><img src="img/logo/logo-no-cohete.png" width="470" alt="Interestelar" /></h1>
+			</header>
+
+			<!-- Intro -->
+			<div class="intro">
+				<div class="intro-title">De tu universo personal al mundo</div>
+				<div class="intro-title">La solución está en ti</div>
+			</div>
+
+			<!-- Countdown 
+			<div class="countdown">
+				<div class="countdown-title"><i class="icon ion-ios7-clock-outline" aria-hidden="true"></i> Time Left Until Launching</div>
+				<div id="countdown-timer"></div>
+			</div-->
+
+			<!-- Newsletter form 
+			<div class="newsletter">
+				<form action="subscribe.php" method="post" id="newsletter-form">
+					<p class="form-field">
+						<label for="newsletter_email" class="visually-hidden">Your email address</label>
+						<i class="icon ion-paper-airplane" aria-hidden="true"></i>
+						<input type="text" name="newsletter_email" id="newsletter_email" value="" placeholder="Your email address" />
+					</p>
+					<p class="form-submit">
+						<input type="submit" name="newsletter_submit" id="newsletter_submit" value="Get Notified" />
+					</p>
+				</form>
+			</div-->
+
+		</div>
+
+		<!-- Background image and overlay -->
+		<div class="bg"></div>
+		<div class="bg-overlay"></div>
+
+	</div>
+	<!-- END LEFT SIDE -->
+
+	<!-- RIGHT SIDE -->
+	<div class="right-wrap">
+
+		<div class="inner fadeInRight">
+
+			<!-- Navigation -->
+			<nav class="site-nav">
+				<h3 class="visually-hidden">Navegación</h3>
+				<ul id="menu">
+					<li><a href="#about" title="About">Quienes somos</a></li>
+					<li><a href="#team" title="Team">Equipo</a></li>
+					<li><a href="#contacts" title="Contacts">Contacto</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main content -->
+			<div id="main">
+
+				<!-- Section About -->
+				<section id="about" class="main-section">
+					<h1>Quienes somos</h1>
+					<p>Somos un colectivo de profesionales tecnólogos, consultores, diseñadores y desarrolladores de software, dedicados al servicio de consultoría en tecnologías de la información y desarrollo.</p> 
+					<p>Nuestra pasión es la búsqueda constante de mejorar la manera de hacer el trabajo, la excelencia técnica, tanto para nosotros, nuestros clientes y la industria en general.</p>
+					<p>Creemos que a través de la aplicación inteligente de la tecnología podemos hacer cambios positivos y profundos en la sociedad y el mundo.</p>
+					<h1>Nos dedicamos a</h1>
+					
+					<!-- Services list -->
+					<div class="service">
+						<div class="service-icon">
+							<i class="icon ion-planet" aria-hidden="true"></i>
+						</div>
+						<div class="service-desc">
+							<p><span class="highlight">Descubrimiento</span> Ayudamos a nuestros clientes a descubrir ideas, ventajas competitivas y clarificar objetivos desde un enfoque ágil y colaborativo.</p>
+						</div>
+					</div>
+					<div class="service">
+						<div class="service-icon">
+							<i class="icon ion-lightbulb" aria-hidden="true"></i>
+						</div>
+						<div class="service-desc">
+							<p><span class="highlight">Consultoría Técnica</span> Apoyamos el análisis de procesos de desarrollo, diseño de productos de software, arquitectura de sistemas existentes o por diseñar, y enfocamos nuestra energía en potenciar a equipos de desarrollo en la adopción de técnicas avanzadas de desarrollo y la aplicación adecuada de tecnologías.</p>
+						</div>
+					</div>
+					<div class="service">
+						<div class="service-icon">
+							<i class="icon ion-university" aria-hidden="true"></i>
+						</div>
+						<div class="service-desc">
+							<p><span class="highlight">Coaching Ágil</span> Desde el equipo de desarrollo hasta los stakeholders, promovemos prácticas ágiles y su adopción como una transformación cultural transversal a las organizaciones, a través de coaching directo y sesiones prácticas. Nuestro objetivo es que nuestros clientes obtengan la capacidad como organización de aprender y ajustar constantemente sus prácticas para incrementar la capacidad de entregar valor y deshacerse de aquellos vicios que desperdician energía y recursos.</p>
+						</div>
+					</div>
+					<div class="service">
+						<div class="service-icon">
+							<i class="icon ion-code-working" aria-hidden="true"></i>
+						</div>
+						<div class="service-desc">
+							<p><span class="highlight">Diseño y desarrollo de software</span> Creamos productos de software para liberar todo el potencial detrás de tus ideas, sin importar que tan ambiciosas sean.</p>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- Section Team -->
+				<section id="team" class="main-section">
+					<h1>Nuestro Equipo</h1>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+					
+					<!-- Team members list -->
+					<div class="row team-member">
+						<div class="one-third team-photo">
+							<img src="img/equipo/John_Doe.jpg" alt="John Doe" />
+						</div>
+						<div class="two-thirds team-desc">
+							<h2>Susana Gamboa</h2>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+							<ul class="team-social">
+								<li><a href="#" title="Twitter" class="icon ion-social-twitter"><span class="visually-hidden">Twitter</span></a></li>
+								<li><a href="#" title="Google+" class="icon ion-social-googleplus"><span class="visually-hidden">Google+</span></a></li>
+								<li><a href="#" title="Tumblr" class="icon ion-social-tumblr"><span class="visually-hidden">Tumblr</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row team-member">
+						<div class="one-third team-photo">
+							<img src="img/equipo/Jane_Roe.jpg" alt="Jane Roe" />
+						</div>
+						<div class="two-thirds team-desc">
+							<h2>Felipe Gomez</h2>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+							<ul class="team-social">
+								<li><a href="#" title="Twitter" class="icon ion-social-twitter"><span class="visually-hidden">Twitter</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row team-member">
+						<div class="one-third team-photo">
+							<img src="img/equipo/Richard_Roe.jpg" alt="Richard Roe" />
+						</div>
+						<div class="two-thirds team-desc">
+							<h2>Juan Carlos Aravena</h2>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+							<ul class="team-social">
+								<li><a href="#" title="Twitter" class="icon ion-social-twitter"><span class="visually-hidden">Twitter</span></a></li>
+								<li><a href="#" title="Dribbble" class="icon ion-social-dribbble-outline"><span class="visually-hidden">Dribbble</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- Section Contacts -->
+				<section id="contacts" class="main-section">
+					<h1>Contacto</h1>
+
+					<!-- Google map (no lo usamos)
+					<div id="map-canvas" class="google-map"></div>
+					-->
+
+					<!-- Contact details -->
+					<div class="row">
+						<div class="one-half">
+						<!-- No hay teléfono
+							<h2><i class="icon ion-ios7-telephone"></i>Phone</h2>
+							<p>Phone: (000) 555 1212<br />Mobile: (000) 555 0100<br />Fax: (000) 555 0101</p>
+						 -->
+							<h2><i class="icon ion-paper-airplane"></i>Email</h2>
+							<p>suh@interestelar.cl<br />
+								 felipe@interestelar.cl<br />
+								 jc@interestelar.cl
+							</p>
+						</div>
+						<div class="one-half">
+						<!-- No hay dirección 
+							<h2><i class="icon ion-ios7-location"></i>Address</h2>
+							<p>123 Some Street<br /> Some City<br /> AA 12345</p>
+						-->
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="site-footer">
+
+				<!-- Social links -->
+				<ul class="footer-social">
+					<li class="facebook"><a href="#" title="Facebook" class="icon ion-social-facebook"><span class="visually-hidden">Facebook</span></a></li>
+					<li class="twitter"><a href="#" title="Twitter" class="icon ion-social-twitter"><span class="visually-hidden">Twitter</span></a></li>
+					<li class="googleplus"><a href="#" title="Google+" class="icon ion-social-googleplus"><span class="visually-hidden">Google+</span></a></li>
+				</ul>
+					
+			</footer>
+
+		</div>
+
+	</div>
+	<!-- END RIGHT SIDE -->
+
+	<!-- Loading... -->
+	<div id="preload">
+		<div id="preload-content">
+			<div class="spinner">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+			<div>Loading...</div>
+		</div>
+	</div>
+
+	<!-- Included JS files -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	
+</body>
 </html>
