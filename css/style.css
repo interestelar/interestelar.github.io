@@ -12,7 +12,7 @@ Colors:
 -------------------------------------------------*/
 html {
 	font-family: 'Dosis', sans-serif;
-	font-size: 93.75%;
+	font-size: 100%;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
@@ -22,6 +22,7 @@ body {
 	color: #bec7cf;
 	line-height: 1.5;
 	margin: 0;
+	text-align: justify;
 }
 
 html,
@@ -312,7 +313,7 @@ h3:first-child {
 h1 .icon,
 h2 .icon,
 h3 .icon {
-	background: #1799dd;
+	/*background: #1799dd;*/
 	border-radius: 3px;
 	display: inline-block;
 	text-align: center;
@@ -328,6 +329,8 @@ h1 .icon {
 }
 
 h2 .icon {
+	background: rgb(151, 54, 133);
+	color: #fff;
 	font-size: 16px;
 	height: 28px;
 	line-height: 1.75;
@@ -481,12 +484,12 @@ h3 .icon {
 }
 
 .left-wrap .bg-overlay {
-	/*background: #080e15; /*rgba(22,30,39,0.6) antes*/
+	background: rgba(8, 14, 21, 0.8);
 	bottom: 0;
-	left: 0;
+	font-size: 93.75%;
+	padding: 10px;
 	position: absolute;
 	right: 0;
-	top: 0;
 	z-index: -1;
 }
 
@@ -514,7 +517,6 @@ h3 .icon {
 }
 
 .inner.fadeInLeft {
-	background: rgba(8,14,21, 0.6);
 }
 
 /* Intro */

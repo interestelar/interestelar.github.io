@@ -63,12 +63,6 @@
 		// Add tabs functionality to the right side content
 		jgtContentTabs();
 
-		
-		// Set the minimum height for the right side and bind on resize or orientation change
-		$(window).bind('resize orientationchange', function(){
-			jgtMinHeight();
-		});
-
 	});
 
 	// Add tabs functionality to the right side content
@@ -99,25 +93,42 @@
       //The callback function
       function(data) {
 
+      	//console.log(data);
+
 	    	//Get random photo from the api's items array
 	      var randomPhoto = data.items[Math.floor(Math.random() * data.items.length)];  
 
+	      console.log(randomPhoto);
+
+	      var photo_author = randomPhoto.author.split('(')[1].split(')')[0];
 	      var photo_id = randomPhoto.media.m.split('/').pop().split('_')[0];
-	      //console.log(photo_id);
+	      var photo_title = randomPhoto.title;
+	      var photo_link = randomPhoto.link;
 
       	$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&jsoncallback=?", 
       	{
-      		api_key: "22e5de5113e832acf74ad1f59cb281f0",
+      		api_key: "7a9118c38985c3be8f3c117d5734a6a6",
       		format: "json",
       		photo_id: photo_id
       	}, function(json_data) {
+
+      			console.log(json_data);
 
       			var photosArray = json_data.sizes.size;
       			var photoUrlOriginal = photosArray[photosArray.length - 1].source;
       			console.log(photoUrlOriginal);
 
+	          var attr = '<a href="' +photo_link+ '"> \
+	        		' +photo_title+ ' - ' +photo_author+ ' \
+	        		</a>';
+
+	        	$('.bg-overlay').append(attr);
+
 	          $('<img/>').attr('src', photoUrlOriginal).load(function() {
 	          	$(this).remove();
+	          	$('.inner.fadeInLeft').css({
+	          		background: "rgba(8, 14, 21, 0.7)",
+	          	});
 	          	$('.left-wrap').css({
 		            height: "100vh",
 		          	//Use the randomPhoto's link
@@ -127,7 +138,6 @@
 		            backgroundSize: "cover",
 	          	});
 	          });
-
 
       	});
        });
